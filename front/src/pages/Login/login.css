@@ -1,0 +1,97 @@
+.login_main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f9;
+   
+}
+
+.clipath {
+    position: absolute;
+    background-color: red;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('https://blog-city.info/fr/img1/148_Entre_principale_Time_Med_V.jpg');
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 20%, 50% 60%, 0 20%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 20%, 50% 60%, 0 20%, 0 0);
+
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: white;
+    color: #212529;
+    box-shadow: 3px 6px 19px 2px rgba(0,0,0,0.35);
+-webkit-box-shadow: 3px 6px 19px 2px rgba(0,0,0,0.35);
+-moz-box-shadow: 3px 6px 19px 2px rgba(0,0,0,0.35);
+
+}
+
+.login img.logo_poste {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login .wrapper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.login .wrapper .connexion_wrapper{
+    margin-top: 10%;
+}
+.login .wrapper .connexion_wrapper .sub_wrapper {
+    margin-bottom: 15px;
+}
+
+.login .wrapper .connexion_wrapper .sub_wrapper label,
+.login .wrapper .connexion_wrapper .sub_wrapper input {
+    width: 100%;
+}
+
+.login .wrapper .connexion_wrapper .sub_wrapper label {
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 5%;
+    font-weight: 500;
+}
+
+.login .wrapper .connexion_wrapper .sub_wrapper input {
+    padding: 8px 14.4px;
+    margin-top: 2%;
+    border: 1px solid #e6e6e6;
+}
+.login .wrapper .connexion_wrapper .sub_wrapper input:focus{
+    outline: none;
+}
+.login .wrapper .connexion_wrapper button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 13px;
+    font-family: "Inter";
+    font-weight: 400;
+    background-color: var(--main-color);
+    color: white;
+    transition: .5s;
+}
+.login .wrapper .connexion_wrapper button:hover{
+    cursor: pointer;
+}
+.login .wrapper .connexion_wrapper button:active{
+    transform: scale(.5);
+}
